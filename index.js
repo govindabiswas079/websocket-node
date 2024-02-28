@@ -52,7 +52,7 @@ const io = new Server(server, {
 
 
 io.on('connection', (socket) => {
-    console.log("connect", socket.request._query.foo)
+    console.log("connect =====>", socket.request._query.foo)
     socket.on("message", async (message) => {
         console.log("message", message)
     })
